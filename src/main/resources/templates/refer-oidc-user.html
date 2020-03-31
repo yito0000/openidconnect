@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <table>
+    <tr><td>at_hash         </td><td>-></td><td sec:authentication="principal.attributes['at_hash']"></td></tr>
+    <tr><td>sub             </td><td>-></td><td sec:authentication="principal.attributes['sub']"></td></tr>
+    <tr><td>email_verified  </td><td>-></td><td sec:authentication="principal.attributes['email_verified']"></td></tr>
+    <tr><td>iss             </td><td>-></td><td sec:authentication="principal.attributes['iss']"></td></tr>
+    <tr><td>given_name      </td><td>-></td><td sec:authentication="principal.attributes['given_name']"></td></tr>
+    <tr><td>locale          </td><td>-></td><td sec:authentication="principal.attributes['locale']"></td></tr>
+    <tr><td>nonce           </td><td>-></td><td sec:authentication="principal.attributes['nonce']"></td></tr>
+    <tr><td>picture         </td><td>-></td><td sec:authentication="principal.attributes['picture']"></td></tr>
+    <tr><td>aud             </td><td>-></td><td sec:authentication="principal.attributes['aud']"></td></tr>
+    <tr><td>azp             </td><td>-></td><td sec:authentication="principal.attributes['azp']"></td></tr>
+    <tr><td>name            </td><td>-></td><td sec:authentication="principal.attributes['name']"></td></tr>
+    <tr><td>exp             </td><td>-></td><td sec:authentication="principal.attributes['exp']"></td></tr>
+    <tr><td>family_name     </td><td>-></td><td sec:authentication="principal.attributes['family_name']"></td></tr>
+    <tr><td>iat             </td><td>-></td><td sec:authentication="principal.attributes['iat']"></td></tr>
+    <tr><td>email           </td><td>-></td><td sec:authentication="principal.attributes['email']"></td></tr>
+  </table>
+</body>
+</html>
